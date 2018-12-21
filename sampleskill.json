@@ -1,0 +1,179 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sample skill",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": [
+                        "Aap kaise ho",
+                        "Would you like to go out with me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "Welcome",
+                    "slots": [],
+                    "samples": [
+                        "What are you doing",
+                        "Hi rashi",
+                        "Hello"
+                    ]
+                },
+                {
+                    "name": "GetBookmarks",
+                    "slots": [],
+                    "samples": [
+                        "tell me my saved places",
+                        "tell me my favourite places",
+                        "tell me my Bookmarked places"
+                    ]
+                },
+                {
+                    "name": "GetRoute",
+                    "slots": [
+                        {
+                            "name": "destination",
+                            "type": "AMAZON.PostalAddress"
+                        }
+                    ],
+                    "samples": [
+                        "how is the traffic today",
+                        "{destination}",
+                        "how is the traffic at {destination}",
+                        "tell me the distance to {destination}",
+                        "how long does it take to reach {destination}",
+                        "how far is the {destination}",
+                        "how is the traffic"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetFlight",
+                    "slots": [
+                        {
+                            "name": "depairport",
+                            "type": "airport_codes"
+                        },
+                        {
+                            "name": "arrairport",
+                            "type": "airport_codes"
+                        }
+                    ],
+                    "samples": [
+                        "Get me flight from {depairport} to {arrairport}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.PostalAddress",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "airport"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "my office"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "my home"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "airport_codes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "CDG"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "SFO"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "LON"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NYC"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CCU"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "HYD"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "GOI"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "NAG"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BLR"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "DEL"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BOM"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MAA"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
